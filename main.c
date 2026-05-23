@@ -1,8 +1,9 @@
 #include "base.h"
 #include "mnist.h"
+#include "poisson.h"
 
-static const float DT = 0.5f;
-static const float TAU_V = 100.0f;
+static const float DT = 0.01f;
+static const float MAX_RATE = 100.0f;
 
 int main(void) {
     MNIST mnist;
