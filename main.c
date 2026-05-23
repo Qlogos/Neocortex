@@ -31,7 +31,7 @@
 #define WIN_H       (GRID_H * CELL_SIZE)
 #define STATUS_H    24              /* height of the bottom status bar  */
 
-#define MAX_RATE    100.0f          /* Hz — firing rate at intensity 1  */
+#define MAX_RATE    300.0f          /* Hz — firing rate at intensity 1  */
 #define DT          0.001f          /* seconds per simulation step      */
 #define DECAY       0.85f           /* brightness multiplier per frame  */
 #define TARGET_FPS  24
