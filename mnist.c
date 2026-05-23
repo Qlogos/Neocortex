@@ -13,6 +13,7 @@
  */
 
 #include "mnist.h"
+#include <stdlib.h>
 
 /* ── Internal helpers ────────────────────────────────────────── */
 
