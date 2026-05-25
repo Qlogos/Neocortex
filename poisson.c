@@ -14,13 +14,13 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-static u32 rng_state = 0x12345678;
+u32 rng_state = 0x12345678;
 
 void poisson_seed(u32 seed) {
     rng_state = seed ? seed : 0x12345678;
 }
 
-static inline u32 xorshift32(void) {
+u32 xorshift32(void) {
     u32 x = rng_state;
     x ^= x << 13;
     x ^= x >> 17;
@@ -29,7 +29,7 @@ static inline u32 xorshift32(void) {
     return x;
 }
 
-static inline float frand(void) {
+f32 frand(void) {
     return (float)xorshift32() / (float)UINT32_MAX;
 }
 
